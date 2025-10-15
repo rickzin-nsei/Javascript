@@ -5,6 +5,14 @@ module.exports = {
     res.sendFile('index.html', { root: './views' });
   },
 
+  users: (req, res) => {
+    res.sendFile('users.html', { root: './views' });
+  },
+
+  seila: (req, res) => {
+    res.sendFile('seila.html', { root: './views' });
+  },
+
   formulario: (req, res) => {
     res.sendFile('formulario.html', { root: './views' });
   },
