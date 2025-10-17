@@ -19,6 +19,12 @@ app.use('/users', usersRoutes);
 const seilaRoutes = require('./routes/seila');
 app.use('/seila', seilaRoutes);
 
+const produtesRoutes = require('./routes/produtos');
+app.use('/produtos', produtesRoutes);
+
+const camisetaRoutes = require('./routes/camisetas');
+app.use('/produtos/camisetas', camisetaRoutes);
+
 // Servidor
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}`);
