@@ -1,9 +1,9 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+const produtosController = require('../controllers/produtosController');
 
 
-/* GET seila listing. */
-router.get('/', function(req, res, next) {
-  res.send('<h1>Tem nada aqui, mas no produtos/camisetas....</h1>');
-});
+router.get('/produtos', produtosController.produtos);
+router.get('/produtos/camisetas', produtosController.camisetas);
+
 module.exports = router;

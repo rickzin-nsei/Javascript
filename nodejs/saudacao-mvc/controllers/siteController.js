@@ -17,10 +17,6 @@ module.exports = {
     res.sendFile('produtos.html', { root: './views' });
   },
 
-  camisetas: (req, res) => {
-    res.sendFile('camisetas.html', { root: './views' });
-  },
-
   formulario: (req, res) => {
     res.sendFile('formulario.html', { root: './views' });
   },

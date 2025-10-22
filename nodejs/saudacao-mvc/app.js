@@ -25,6 +25,9 @@ app.use('/produtos', produtesRoutes);
 const camisetaRoutes = require('./routes/camisetas');
 app.use('/produtos/camisetas', camisetaRoutes);
 
+const clienteRoutes = require('./routes/clientes');
+app.use('/clientes', clienteRoutes);
+
 // Servidor
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}`);
