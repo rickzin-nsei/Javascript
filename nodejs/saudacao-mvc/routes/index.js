@@ -12,6 +12,6 @@ router.post('/users', siteController.users);
 router.post('/seila', siteController.seila);
 router.get('/produtos', produtosController.produtos);
 router.get('/clientes', clienteController.cliente);
-router.get('/login', clienteController.cliente);
+router.get('/login', clienteController.login);
 
 module.exports = router;
