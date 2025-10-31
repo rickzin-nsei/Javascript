@@ -12,11 +12,11 @@ module.exports = {
       faixaEtaria = "idoso";
     }
 
-    if (gender = "male") {
+    if (gender == "male") {
       gender = "masculino";
-    } else if (gender = "female") {
+    } else if (gender == "female") {
       gender = "feminino";
-    } else if (gender = "other") {
+    } else if (gender == "other") {
       gender = "outro";
     }
 

@@ -12,14 +12,13 @@ module.exports = {
       faixaEtaria = "divindade";
     }
 
-    if (gender = "male") {
+    if (gender == "male") {
       gender = "masculino";
-    } else if (gender = "female") {
+    } else if (gender == "female") {
       gender = "feminino";
-    } else if (gender = "other") {
+    } else if (gender == "other") {
       gender = "outro";
     }
-
     return `Olá, ${nome}! Você é um(a) ${faixaEtaria}, do gênero ${gender}. parece que seu email é ${email} e sua senha ${senha}, se por obséquio do destino não for, volte e arrume.`;
   }
 };
